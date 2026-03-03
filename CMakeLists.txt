@@ -4,6 +4,8 @@ project(dcimgui_cmake)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+find_package(Vulkan REQUIRED)
+find_package(glfw REQUIRED)
 # Backend Defintions
 
 # STEP 1 - ADD A BACKEND LIKE BELOW
@@ -70,4 +72,5 @@ target_include_directories(dcimgui_glfw_vulkan PUBLIC
 )
 target_link_libraries(dcimgui_glfw_vulkan PUBLIC
     glfw
+    Vulkan
 )
