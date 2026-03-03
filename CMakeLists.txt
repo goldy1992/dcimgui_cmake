@@ -5,20 +5,20 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 set(DCIMGUI_OPENGL3)
-list(APPEND OPENGL3
+list(APPEND DCIMGUI_OPENGL3
    backends/dcimgui_impl_opengl3.cpp
    backends/imgui_impl_opengl3.cpp
    backends/imgui_impl_opengl3_loader.h
 )
 set(DCIMGUI_VULKAN)
-list(APPEND VULKAN 
+list(APPEND DCIMGUI_VULKAN 
    backends/dcimgui_impl_vulkan.cpp
    backends/dcimgui_impl_vulkan.h
    backends/imgui_impl_vulkan.h
    backends/imgui_impl_vulkan.cpp
 )
 set(DCIMGUI_GLFW)
-list(APPEND GLFW 
+list(APPEND DCIMGUI_GLFW 
    backends/imgui_impl_glfw.cpp
    backends/imgui_impl_glfw.h
    backends/dcimgui_impl_glfw.cpp
