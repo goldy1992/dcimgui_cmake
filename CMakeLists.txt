@@ -74,5 +74,5 @@ target_include_directories(dcimgui_glfw_vulkan PUBLIC
 )
 target_link_libraries(dcimgui_glfw_vulkan PUBLIC
     glfw
-    Vulkan
+    Vulkan::Vulkan
 )
