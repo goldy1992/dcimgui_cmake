@@ -8,14 +8,18 @@
                     "expression": "defined(__EMSCRIPTEN__)&&!defined(IMGUI_IMPL_WEBGPU_BACKEND_DAWN)&&!defined(IMGUI_IMPL_WEBGPU_BACKEND_WGPU)"
                 },
                 {
+                    "condition": "ifdef",
+                    "expression": "__EMSCRIPTEN_MAJOR__"
+                },
+                {
                     "condition": "if",
-                    "expression": "(__EMSCRIPTEN_major__ >= 4)&&(__EMSCRIPTEN_minor__ >= 0)&&(__EMSCRIPTEN_tiny__ >= 10)"
+                    "expression": "(__EMSCRIPTEN_MAJOR__ >= 5)||((__EMSCRIPTEN_MAJOR__ >= 4)&&(__EMSCRIPTEN_MINOR__ >= 0)&&(__EMSCRIPTEN_TINY__ >= 10))"
                 }
             ],
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_wgpu.h",
-                "line": 37
+                "line": 39
             }
         },
         {
@@ -26,6 +30,54 @@
                     "expression": "defined(__EMSCRIPTEN__)&&!defined(IMGUI_IMPL_WEBGPU_BACKEND_DAWN)&&!defined(IMGUI_IMPL_WEBGPU_BACKEND_WGPU)"
                 },
                 {
+                    "condition": "ifdef",
+                    "expression": "__EMSCRIPTEN_MAJOR__"
+                },
+                {
+                    "condition": "ifnot",
+                    "expression": "(__EMSCRIPTEN_MAJOR__ >= 5)||((__EMSCRIPTEN_MAJOR__ >= 4)&&(__EMSCRIPTEN_MINOR__ >= 0)&&(__EMSCRIPTEN_TINY__ >= 10))"
+                }
+            ],
+            "is_internal": false,
+            "source_location": {
+                "filename": "imgui_impl_wgpu.h",
+                "line": 41
+            }
+        },
+        {
+            "name": "IMGUI_IMPL_WEBGPU_BACKEND_DAWN",
+            "conditionals": [
+                {
+                    "condition": "if",
+                    "expression": "defined(__EMSCRIPTEN__)&&!defined(IMGUI_IMPL_WEBGPU_BACKEND_DAWN)&&!defined(IMGUI_IMPL_WEBGPU_BACKEND_WGPU)"
+                },
+                {
+                    "condition": "ifndef",
+                    "expression": "__EMSCRIPTEN_MAJOR__"
+                },
+                {
+                    "condition": "if",
+                    "expression": "(__EMSCRIPTEN_major__ >= 4)&&(__EMSCRIPTEN_minor__ >= 0)&&(__EMSCRIPTEN_tiny__ >= 10)"
+                }
+            ],
+            "is_internal": false,
+            "source_location": {
+                "filename": "imgui_impl_wgpu.h",
+                "line": 45
+            }
+        },
+        {
+            "name": "IMGUI_IMPL_WEBGPU_BACKEND_WGPU",
+            "conditionals": [
+                {
+                    "condition": "if",
+                    "expression": "defined(__EMSCRIPTEN__)&&!defined(IMGUI_IMPL_WEBGPU_BACKEND_DAWN)&&!defined(IMGUI_IMPL_WEBGPU_BACKEND_WGPU)"
+                },
+                {
+                    "condition": "ifndef",
+                    "expression": "__EMSCRIPTEN_MAJOR__"
+                },
+                {
                     "condition": "ifnot",
                     "expression": "(__EMSCRIPTEN_major__ >= 4)&&(__EMSCRIPTEN_minor__ >= 0)&&(__EMSCRIPTEN_tiny__ >= 10)"
                 }
@@ -33,7 +85,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_wgpu.h",
-                "line": 39
+                "line": 47
             }
         }
     ],
@@ -101,7 +153,7 @@
                     "is_internal": false,
                     "source_location": {
                         "filename": "imgui_impl_wgpu.h",
-                        "line": 51
+                        "line": 60
                     }
                 },
                 {
@@ -119,7 +171,7 @@
                     "is_internal": false,
                     "source_location": {
                         "filename": "imgui_impl_wgpu.h",
-                        "line": 52
+                        "line": 61
                     }
                 },
                 {
@@ -137,7 +189,7 @@
                     "is_internal": false,
                     "source_location": {
                         "filename": "imgui_impl_wgpu.h",
-                        "line": 53
+                        "line": 62
                     }
                 },
                 {
@@ -155,7 +207,7 @@
                     "is_internal": false,
                     "source_location": {
                         "filename": "imgui_impl_wgpu.h",
-                        "line": 54
+                        "line": 63
                     }
                 },
                 {
@@ -173,7 +225,7 @@
                     "is_internal": false,
                     "source_location": {
                         "filename": "imgui_impl_wgpu.h",
-                        "line": 55
+                        "line": 64
                     }
                 }
             ],
@@ -185,7 +237,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_wgpu.h",
-                "line": 49
+                "line": 58
             }
         },
         {
@@ -210,7 +262,7 @@
                     "is_internal": false,
                     "source_location": {
                         "filename": "imgui_impl_wgpu.h",
-                        "line": 83
+                        "line": 92
                     }
                 },
                 {
@@ -227,7 +279,7 @@
                     "is_internal": false,
                     "source_location": {
                         "filename": "imgui_impl_wgpu.h",
-                        "line": 84
+                        "line": 93
                     }
                 }
             ],
@@ -241,7 +293,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_wgpu.h",
-                "line": 81
+                "line": 90
             }
         },
         {
@@ -272,7 +324,7 @@
                     "is_internal": false,
                     "source_location": {
                         "filename": "imgui_impl_wgpu.h",
-                        "line": 111
+                        "line": 120
                     }
                 },
                 {
@@ -304,7 +356,7 @@
                     "is_internal": false,
                     "source_location": {
                         "filename": "imgui_impl_wgpu.h",
-                        "line": 112
+                        "line": 121
                     }
                 },
                 {
@@ -333,7 +385,7 @@
                     "is_internal": false,
                     "source_location": {
                         "filename": "imgui_impl_wgpu.h",
-                        "line": 113
+                        "line": 122
                     }
                 },
                 {
@@ -362,7 +414,7 @@
                     "is_internal": false,
                     "source_location": {
                         "filename": "imgui_impl_wgpu.h",
-                        "line": 114
+                        "line": 123
                     }
                 },
                 {
@@ -391,7 +443,7 @@
                     "is_internal": false,
                     "source_location": {
                         "filename": "imgui_impl_wgpu.h",
-                        "line": 115
+                        "line": 124
                     }
                 },
                 {
@@ -420,7 +472,7 @@
                     "is_internal": false,
                     "source_location": {
                         "filename": "imgui_impl_wgpu.h",
-                        "line": 116
+                        "line": 125
                     }
                 }
             ],
@@ -433,7 +485,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_wgpu.h",
-                "line": 109
+                "line": 118
             }
         }
     ],
@@ -480,7 +532,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_wgpu.h",
-                "line": 66
+                "line": 75
             }
         },
         {
@@ -503,7 +555,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_wgpu.h",
-                "line": 67
+                "line": 76
             }
         },
         {
@@ -526,7 +578,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_wgpu.h",
-                "line": 68
+                "line": 77
             }
         },
         {
@@ -579,7 +631,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_wgpu.h",
-                "line": 69
+                "line": 78
             }
         },
         {
@@ -607,7 +659,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_wgpu.h",
-                "line": 72
+                "line": 81
             }
         },
         {
@@ -630,7 +682,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_wgpu.h",
-                "line": 73
+                "line": 82
             }
         },
         {
@@ -669,13 +721,13 @@
             "is_static": false,
             "comments": {
                 "preceding": [
-                    "// (Advanced) Use e.g. if you need to precisely control the timing of texture updates (e.g. for staged rendering), by setting ImDrawData::Textures = NULL to handle this manually."
+                    "// (Advanced) Use e.g. if you need to precisely control the timing of texture updates (e.g. for staged rendering), by setting ImDrawData::Textures = nullptr to handle this manually."
                 ]
             },
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_wgpu.h",
-                "line": 76
+                "line": 85
             }
         },
         {
@@ -717,7 +769,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_wgpu.h",
-                "line": 93
+                "line": 102
             }
         },
         {
@@ -757,7 +809,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_wgpu.h",
-                "line": 94
+                "line": 103
             }
         },
         {
@@ -799,7 +851,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_wgpu.h",
-                "line": 97
+                "line": 106
             }
         },
         {
@@ -842,7 +894,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_wgpu.h",
-                "line": 98
+                "line": 107
             }
         },
         {
@@ -885,7 +937,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_wgpu.h",
-                "line": 99
+                "line": 108
             }
         },
         {
@@ -934,7 +986,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_wgpu.h",
-                "line": 101
+                "line": 110
             }
         },
         {
@@ -983,7 +1035,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_wgpu.h",
-                "line": 102
+                "line": 111
             }
         },
         {
@@ -1036,7 +1088,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_wgpu.h",
-                "line": 104
+                "line": 113
             }
         },
         {
@@ -1082,7 +1134,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_wgpu.h",
-                "line": 118
+                "line": 127
             }
         }
     ]

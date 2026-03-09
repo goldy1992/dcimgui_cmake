@@ -38,7 +38,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_glfw.h",
-                "line": 28
+                "line": 29
             }
         },
         {
@@ -52,7 +52,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_glfw.h",
-                "line": 29
+                "line": 30
             }
         },
         {
@@ -126,7 +126,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_glfw.h",
-                "line": 32
+                "line": 33
             }
         },
         {
@@ -179,7 +179,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_glfw.h",
-                "line": 33
+                "line": 34
             }
         },
         {
@@ -232,7 +232,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_glfw.h",
-                "line": 34
+                "line": 35
             }
         },
         {
@@ -255,7 +255,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_glfw.h",
-                "line": 35
+                "line": 36
             }
         },
         {
@@ -278,7 +278,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_glfw.h",
-                "line": 36
+                "line": 37
             }
         },
         {
@@ -343,7 +343,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_glfw.h",
-                "line": 40
+                "line": 41
             }
         },
         {
@@ -390,7 +390,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_glfw.h",
-                "line": 47
+                "line": 48
             }
         },
         {
@@ -430,7 +430,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_glfw.h",
-                "line": 48
+                "line": 49
             }
         },
         {
@@ -466,14 +466,14 @@
             "is_static": false,
             "comments": {
                 "preceding": [
-                    "// GFLW callbacks options:",
+                    "// GLFW callbacks options:",
                     "// - Set 'chain_for_all_windows=true' to enable chaining callbacks for all windows (including secondary viewports created by backends or by user)"
                 ]
             },
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_glfw.h",
-                "line": 52
+                "line": 53
             }
         },
         {
@@ -532,7 +532,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_glfw.h",
-                "line": 55
+                "line": 56
             }
         },
         {
@@ -588,7 +588,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_glfw.h",
-                "line": 56
+                "line": 57
             }
         },
         {
@@ -657,7 +657,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_glfw.h",
-                "line": 57
+                "line": 58
             }
         },
         {
@@ -736,7 +736,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_glfw.h",
-                "line": 58
+                "line": 59
             }
         },
         {
@@ -802,7 +802,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_glfw.h",
-                "line": 59
+                "line": 60
             }
         },
         {
@@ -894,7 +894,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_glfw.h",
-                "line": 60
+                "line": 61
             }
         },
         {
@@ -947,7 +947,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_glfw.h",
-                "line": 61
+                "line": 62
             }
         },
         {
@@ -1000,7 +1000,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_glfw.h",
-                "line": 62
+                "line": 63
             }
         },
         {
@@ -1042,7 +1042,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_glfw.h",
-                "line": 65
+                "line": 66
             }
         },
         {
@@ -1082,7 +1082,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_glfw.h",
-                "line": 66
+                "line": 67
             }
         },
         {
@@ -1122,7 +1122,7 @@
             "is_internal": false,
             "source_location": {
                 "filename": "imgui_impl_glfw.h",
-                "line": 67
+                "line": 68
             }
         }
     ]
